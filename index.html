@@ -1,0 +1,214 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>SpecularDefect9 Dataset</title>
+
+	<!-- Meta tags for search engines to crawl -->
+	<meta name="robots" content="index,follow">
+	<meta name="description"
+		content="SpecularDefect9 is a large-scale specular defect dataset with 554 specular images. Each specular image contains one light intensity map named 'a.png', 24 horizontal fringe maps named '1.png'~'24.png', and 24 vertical fringe maps named '25.png'~'48.png'.">
+	<meta name="keywords" content="large-scale dataset; specular defect; computer vision">
+	<link rel="author" href="tanasg@sjtu.edu.cn">
+
+	<!-- Fonts and stuff -->
+	<link href="./assets/font.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="./assets/project.css" media="screen">
+	<link rel="stylesheet" type="text/css" media="screen" href="./assets/iconize.css">
+	<script async="" src="./assets/prettify.js"></script>
+	<script src="./assets/highlight.min.js"></script>
+
+	<style id="style-1-cropbar-clipper">
+		/* Copyright 2014 Evernote Corporation. All rights reserved. */
+		.en-markup-crop-options {
+			top: 18px !important;
+			left: 50% !important;
+			margin-left: -100px !important;
+			width: 200px !important;
+			border: 2px rgba(255, 255, 255, .38) solid !important;
+			border-radius: 4px !important;
+		}
+
+		.en-markup-crop-options div div:first-of-type {
+			margin-left: 0px !important;
+		}
+	</style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1068.0" data-gr-ext-installed="">
+	<div id="content">
+		<div id="content-inner">
+
+			<div class="section head">
+				<h1>SpecularDefect9 Dataset</h1>
+
+				<br>
+
+				<div class="authors">
+					<a href="https://www.linkedin.com/in/%E9%9D%96%E6%B7%BB-%E5%85%B3-983896239/">Jingtian
+						Guan</a>&nbsp;&nbsp;
+					<a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=vSM7n_UAAAAJ">Jingjing
+						Fei</a>&nbsp;&nbsp;
+					<a href="https://bigballon.github.io/">Wei Li</a>&nbsp;&nbsp;
+					<a href="https://scholar.google.com/citations?user=aDf9fpkAAAAJ&hl=en">Xiaoke Jiang</a> </br>
+					<a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=dg1JyaUAAAAJ">Liwei
+						Wu</a>&nbsp;&nbsp;
+					<a href="https://www.linkedin.com/in/yakun-liu-2a0093140/">Yakun Liu</a>&nbsp;&nbsp;
+					<a href="https://me.sjtu.edu.cn/en/FullTimeTeacher/xijuntong.html">Juntong Xi</a>&nbsp;&nbsp;
+				</div>
+
+				<div class="affiliations">
+					<a href="https://me.sjtu.edu.cn/en/">School of Mechanical Engineering, Shanghai Jiao Tong
+						University,</a>
+					<a href="https://www.sensetime.com/">Sensetime Research</a> </br>
+
+				</div>
+			</div>
+			<!-- TBD -->
+			<center><img src="./assets/overview.svg" border="0" width="90%"></center>
+			<div class="section news">
+
+				<h2>News</h2>
+				<ul>
+					<li><strong>2022-07-xx</strong> SpecularDefect9 (classification part) have been released.
+					</li>
+				</ul>
+
+			</div>
+
+			<div class="section overview">
+				<h2>Overview Defects</h2>
+				<p> SpecularDefect9 is a large-scale specular defect dataset generated based on 554 float glass 
+					with an aluminized front surface and 553 polycarbonate mirrors. </br>
+
+					There are a total of <b>9</b> classes of defects:</br>
+					<b>1.Dirt</b>,
+					<b>2.Fingerprint</b>,
+					<b>3.Hair</b>,
+					<b>4.Fiber</b>,
+					<b>5.Scratch</b>,
+					<b>6.Staggered_scratch</b>,
+					<b>7.Scuffing</b>,
+					<b>8.Concave_defect</b>,
+					<b>9.Convex_defect</b>.
+					</br>
+					<br>
+					<img src="./assets/SpecularDefect9_overview.png" width="100%">
+			</div>
+
+			<div class="section details">
+				<h2>Classification Task</h2>
+
+				</br>
+				Specular defect imaging results at each angle include 49 images:</br>
+				one light intensity image named 'a.png', 24 horizontal
+				fringe images named
+				'1.png'~'24.png', and 24 vertical fringe images named '25.png'~'48.png'.
+				So there are <b>54,243</b> images in SpecularDefect9.
+
+				Each class of defect contains rich identities:
+				</p>
+
+				<ul>
+					<li>
+						<b>1,544</b> number of <b>Dirt</b> identities
+					</li>
+					<li>
+						<b>457</b> number of <b>Fingerprint</b> identities
+					</li>
+					<li>
+						<b>460</b> number of <b>Hair</b> identities
+					</li>
+					<li>
+						<b>2,266</b> number of <b>Fiber</b> identities
+					</li>
+					<li>
+						<b>590</b> number of <b>Scratch</b> identities
+					</li>
+					<li>
+						<b>277</b> number of <b>Staggered_scratch</b> identities
+					</li>
+					<li>
+						<b>448</b> number of <b>Scuffing</b> identities
+					</li>
+					<li>
+						<b>923</b> number of <b>Concave_defect</b> identities
+					</li>
+					<li>
+						<b>914</b> number of <b>Convex_defect</b> identities
+					</li>
+				</ul>
+				Since each instance contains 49 images, the total number of images is <b>547,330</b>.
+				<details>
+					<summary>data structures</summary>
+					<pre><code>
+	Classification
+		├── Test
+		│   ├── Concave_defect
+		│   │   ├── 1
+		│   │   │  │
+		│   │   │  ├── a.png
+		│   │   │  ├── 1.png
+		│   │   │  ├── 2.png
+		│   │   │  ├── ...
+		│   │   │  ├── ...
+		│   │   │  ├── 47.png
+		│   │   │  └── 48.png
+		│   │   │
+		│   │   ├── 2
+		│   │   ├── ...
+		│   │   ├── ...
+		│   │   └── 401
+		│   ├── Convex_defect
+		│   ├── Dirt
+		│   ├── ...
+		│   ├── ...
+		│   └── Staggered_scratch
+		└── Train
+			├── Concave_defect
+			├── ...
+			├── ...
+			└── Staggered_scratch
+				</code></pre>
+				</details>
+
+			</div>
+
+			<div class="section overview">
+				<h2>Detection Task</h2>
+				Comming soon.
+			</div>
+			<div class="section overview">
+				<h2>Downloads</h2>
+				<ul>
+					<li>
+						SpecularDefect9-CLS:
+						[<a href="" target="_blank">Baidu Drive</a>]
+						[<a href="" target="_blank">Google Drive</a>]
+					</li>
+					<li>
+						SpecularDefect9-DET: Comming soon.
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="section citation">
+				<h2>Citation</h2>
+				TBD
+			</div>
+
+			<div class="section contact">
+				<h2>Contact</h2>
+				<br>
+				Please contact <a href="https://www.linkedin.com/in/%E9%9D%96%E6%B7%BB-%E5%85%B3-983896239/"> Jingtian
+					Guan</a> and <a href="https://bigballon.github.io/">Wei Li</a> for questions about the dataset.
+			</div>
+		</div>
+	</div>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
